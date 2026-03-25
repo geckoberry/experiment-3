@@ -9,6 +9,8 @@
 `R                          : Reset`<br>
 `V                          : Toggle splitscreen`<br>
 `← / →                      : Previous / Next`<br>
+`Scroll / RMB               : Zoom / Pan`<br>
+`LMB                        : Use brush`<br>
 `↑ / ↓                      : Change brush size`<br>
 `1 / 2 / 3 / 4              : Brush modes`<br>
 `Cmd+Z / Ctrl+Z             : Undo`<br>
