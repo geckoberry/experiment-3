@@ -9,6 +9,7 @@
 `C                          : Clear`<br>
 `R                          : Reset`<br>
 `V                          : Toggle splitscreen`<br>
+`Space                      : Play / Pause`<br>
 `← / →                      : Previous / Next`<br>
 `Scroll / RMB               : Zoom / Pan`<br>
 `LMB                        : Use brush`<br>
