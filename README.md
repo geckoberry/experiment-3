@@ -54,6 +54,10 @@ Previously, we were mutating patterns by incrementing/decrementing every paramet
 
 ### Split screening
 
-In order to make the evolutionary process more efficient, I implemented split-screening, which is a common technique in evolutionary simulations. Instead of evaluating one mutation at a time, split-screening presents multiple mutated variants in parallel, allowing for us to quickly select promising descendants.
+In order to make the evolutionary process more efficient, I implemented split-screening, which is a common technique in evolutionary simulations. Instead of evaluating one mutation at a time, split-screening presents multiple mutated variants in parallel, allowing for the user to quickly select promising descendants.
 
 ![](images/evolution.png)
+
+# Other features / experiments
+
+
