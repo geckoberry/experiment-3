@@ -17,7 +17,8 @@
 `Cmd+Z / Ctrl+Z             : Undo`<br>
 `Cmd+Shift+Z / Ctrl+Shift+Z : Redo`<br>
 `Cmd+S / Ctrl+S             : Save`<br>
-`Cmd+Shift+S / Ctrl+Shift+S : Save As`<br><br>
+`Cmd+Shift+S / Ctrl+Shift+S : Save As`<br>
+`F1                         : Toggle UI`<br><br>
 *Splitscreen always regenerates the parent pattern at the top left<br><br>
 
 # Expansion + Design changes
