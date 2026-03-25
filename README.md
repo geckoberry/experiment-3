@@ -1,5 +1,6 @@
 # Cross-Channel MNCA Discovery Tool
-Godot experiments and exploration of cross-channel SMNCA.
+
+![](images/boosters.png)
 
 # Expansion + Design changes
 
@@ -40,7 +41,19 @@ With the single channel rulespace, we were able to get away with "spinning" for 
 ### Mutation quality
 
 Previously, we were mutating patterns by incrementing/decrementing every parameter based on an adjustable strength. While the change to each parameter is random, this method still produces very uniform changes to the overall ruleset and constrains the degree of change due to using PRNGs as the random factor. The improved method instead mutates the raw byte representation of the ruleset, similar to how mutations occur in DNA. The user sets a bit-flip chance (replacing mutation strength), and each bit in the serialized ruleset is independently flipped with the given probability, producing subtle, dramatic, or even zero change depending on which bits flip. This makes exploration of pattern space much richer compared to simply nudging the parameters. However, a key caveat of this method is that strict parameter semantics are harder to enforce, and constraints can be violated after mutation due to the nature of bit flips . For example, channel triplets must be renormalized in the shader to restore valid channel proportions.
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <img src="images/inc_plot.png" width="600"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/bit_plot.png" width="600"><br>
+    </td>
+  <tr>
+<table>
 
 ### Split screening
 
 In order to make the evolutionary process more efficient, I implemented split-screening, which is a common technique in evolutionary simulations. Instead of evaluating one mutation at a time, split-screening presents multiple mutated variants in parallel, allowing for us to quickly select promising descendants.
+
+![](images/evolution.png)
