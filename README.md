@@ -34,7 +34,7 @@ The new design uses the following parameters:
 The initial change was expanding each neighborhood from a single annuli (radius1, radius2) to a set of annuli represented by a 12 length binary sequence, where a 1 indicates that the ith radius is included in the neighborhood. When generating a random neighborhood, we first take probability `p ~ U[0.0, 0.7]`. We then iterate through each 12 radii starting from radius 1 and apply a simple algorithm:<br>
 ```
 if previous bit == 0 or null: 1 with chance p
-elif previous bit == 1:       1 with change sqrt(p)
+elif previous bit == 1:       1 with chance sqrt(p)
 ```
 This way, we are more likely to cluster rings and create denser annuli, which I found to improve robustness.<br><br>
 Another key change is the way we select a winning candidate. While initial trials scored candidates based on greatest total change to pixel value, I discovered that designating a winning candidate for each channel (using greatest change to that channel) also increased the average robustness of the system.
