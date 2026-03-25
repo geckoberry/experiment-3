@@ -1,6 +1,21 @@
 # Cross-Channel MNCA Discovery Tool
 
+
 ![](images/boosters.png)
+
+### Controls
+
+`C                          : Clear`<br>
+`R                          : Reset`<br>
+`V                          : Toggle splitscreen`<br>
+`← / →                      : Previous / Next`<br>
+`↑ / ↓                      : Change brush size`<br>
+`1 / 2 / 3 / 4              : Brush modes`<br>
+`Cmd+Z / Ctrl+Z             : Undo`<br>
+`Cmd+Shift+Z / Ctrl+Shift+Z : Redo`<br>
+`Cmd+S / Ctrl+S             : Save`<br>
+`Cmd+Shift+S / Ctrl+Shift+S : Save As`<br><br>
+*Splitscreen always regenerates the parent pattern at the top left<br><br>
 
 # Expansion + Design changes
 
@@ -52,12 +67,12 @@ Previously, we were mutating patterns by incrementing/decrementing every paramet
   <tr>
 <table>
 
-### Split screening
+### Splitscreening
 
-In order to make the evolutionary process more efficient, I implemented split-screening, which is a common technique in evolutionary simulations. Instead of evaluating one mutation at a time, split-screening presents multiple mutated variants in parallel, allowing for the user to quickly select promising descendants.
+In order to make the evolutionary process more efficient, I implemented splitscreening, which is a common technique in evolutionary simulations. Instead of evaluating one mutation at a time, splitscreening presents multiple mutated variants in parallel, allowing for the user to quickly select promising descendants.
 
 ![](images/evolution.png)
-
+<br><br>
 
 # Other features / experiments
 
@@ -77,3 +92,11 @@ https://github.com/user-attachments/assets/f53f19b6-f4f3-47f9-9b63-0cb84a2586a4
 ### Soundmapping
 
 https://github.com/user-attachments/assets/c6f17c78-b6a8-405d-9c0f-e73a4bb18856
+
+# Acknowledgements
+
+Thank you to:<br>
+Slackermanz for his SMNCA rulespace and introducing me to the evolutionary algorithm, <br>
+Stefan Gustavson for his GLSL implementation of Perlin noise,<br>
+Jayvee Enaguas who made the [typeface ](https://www.dafont.com/pixel-operator.font) I used,<br>
+GPT 5.3.
