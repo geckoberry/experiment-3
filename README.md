@@ -1,1 +1,1 @@
-# experiment-3
+# Multichannel MNCA
