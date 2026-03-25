@@ -58,6 +58,22 @@ In order to make the evolutionary process more efficient, I implemented split-sc
 
 ![](images/evolution.png)
 
+
 # Other features / experiments
 
+### Pattern interactivity
 
+Because MNCA solitons are often very stable, we can simulate interaction as shown below. The following examples are implemented similarly: by sampling a ring of pixels around the cursor and mixing their values into a ring that is closer or farther, we can "push" or "pull" pixels away from or towards the cursor. This visualizes attraction/avoidant responses from solitons.
+
+https://github.com/user-attachments/assets/5f8faac3-45e9-465c-8783-711bcbe529f9
+
+https://github.com/user-attachments/assets/dd6be26a-d408-43e9-b049-1efd011fa8d8
+
+### Obstacles
+
+https://github.com/user-attachments/assets/f53f19b6-f4f3-47f9-9b63-0cb84a2586a4
+
+
+### Soundmapping
+
+https://github.com/user-attachments/assets/c6f17c78-b6a8-405d-9c0f-e73a4bb18856
